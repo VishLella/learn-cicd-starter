@@ -7,7 +7,7 @@ import (
 func TestAPIKey(t *testing.T) {
 	got := "random"
 	want := "random"
-	if got == want {
+	if got != want {
 		t.Fatalf("expected: %v, got: %v", want, got)
 	}
 }
